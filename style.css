@@ -15,11 +15,18 @@ body{
 }
 
 .navbar{
+    position: sticky;
+    top: 0px;
     height: 100px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+   
     padding: 15px;
+}
+.navbar.scrolled{
+    background-color: #0f2235;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
 }
 
 
@@ -127,7 +134,67 @@ body{
 }
 
 
+.scrollContainer{
+  
+    margin-top: 1.5rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
 
+
+}
+#card{
+   
+    text-align: center;
+    height: 120px;
+    width: 160px;
+    align-content: center;
+
+    border-radius: 12px;
+    background-color: #0f22357a;
+    color: #ffffff;
+    padding: 10px;
+}
+
+/* footer */
+
+.footertop{
+    background-color: #067df3;
+    border-radius: 15px;
+    margin: 1.5rem;
+    display: grid;
+    
+    grid-template-columns: 1fr 1fr;
+}
+.footert{
+    text-align: center;
+    align-content: center;
+    justify-content: center; 
+    
+
+}
+.footert h1{
+    font-size: 40px;
+    color: #ffffff;
+}
+.footert button{
+    margin-top: 2rem;
+    width: 200px;
+    height: 40px;
+    padding: 8px 16px;
+    border: 1px solid #46c4ff;
+    border-radius: 5px;
+    
+    background-color: #46c4ff;
+    color: #ffffff;
+    cursor: pointer;
+}
+.footert button:hover{
+    background-color: transparent;
+}
 
 
 @media screen and (max-width:1100px){
