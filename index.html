@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Sidebar Navbar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<div class="overlay" onclick="closeMenu()"></div>
+
+<nav class="navbar">
+
+   
+    <div>
+        <img src="asset/footer-logo-white.svg" alt="logo">
+    </div>
+
+ 
+   
+
+   
+    <div class="list">
+        <ul>
+            <li><a href="#">HomePage</a></li>
+            <li><a href="#">Schedules</a></li>
+            <li><a href="#">Speaker</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+             <li><a href="#">Documentation</a></li>
+        </ul>
+    </div>
+
+   <img class="white" src="asset/white.svg" alt="--">
+    <div class="hamburger" onclick="openMenu()">☰</div>
+    <div class="buttons">
+        
+        <button class="SignIn">Sign In</button>
+        <button class="SignUp">Sign Up</button>
+    </div>
+
+</nav>
+
+<script>
+function openMenu(){
+    document.querySelector(".list").classList.add("active");
+    document.querySelector(".buttons").classList.add("active");
+    document.querySelector(".overlay").classList.add("active");
+}
+
+function closeMenu(){
+    document.querySelector(".list").classList.remove("active");
+    document.querySelector(".buttons").classList.remove("active");
+    document.querySelector(".overlay").classList.remove("active");
+}
+</script>
+
+
+<section>
+    <!-- Main content -->
+     <div class="Schedules">
+        <div>
+            <h1>Event Schedules</h1>
+            <p>Discover a wealth of insightful materials meticulously crafted to provide you with a comprehensive.</p>
+        </div>
+        <div>
+            <a href="#"><span  style="color: #2f4960;">Home&nbsp;</span> > &nbsp; Schedules</a>
+        </div>
+     </div>
+</section>
+
+</body>
+</html>
